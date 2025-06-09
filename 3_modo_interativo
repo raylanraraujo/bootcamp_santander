@@ -1,0 +1,21 @@
+# O modo interativo é interessante porque conseguimos manipular valores em tempo real
+# podemos entrar no modo interativo de duas maneiras:
+# 1- Usando o comando python
+#   O Gui disse na aula que para abrir o modo interativo deve-se
+#   abrir o terminal e digitar o comando python.
+#   Entretanto no meu caso seria o comando python3 
+# 
+# 2- ou através da flag -1
+#   onde se usa o comando python -i nome_do_programa.py
+#   no meu caso deve-se ser usado o python3
+# sair do modo interativo usa-se o comando: exit()
+#
+# Funções dir e help
+#   dir
+#   sem argumentos, retorna a lista de nomes no escopo local atual.  com um argumento , retorna uma lista de atributos válidos para o objeto.
+#
+#   help
+#   invoca o sistema de ajuda integrado. É possível fazer buscas em modo interativo ou informar por parametro qual o nome do módulo, função, classe, método ou variável. Exemplo: help(); help(100)
+
+# voce pode executar o script pelo modo interativo, e consultar dentro dos objetos daquele script, quais são os métodos. Uma vez encontrado os métodos, e você não tem segurança de como utilizar, você chama o módulo help ele automaticamente ensina pra voce.
+
