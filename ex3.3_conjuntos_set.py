@@ -64,3 +64,38 @@ print(copia_sorteio)
 sorteio.clear()
 print(sorteio)
 print(copia_sorteio)
+
+# discard
+numeros = {1, 2, 3, 1, 2, 4, 5, 5, 6, 7, 8, 9, 0}
+
+print(numeros) # {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}
+
+numeros.discard(1) 
+numeros.discard(45) 
+
+print(numeros)
+
+#pop
+numeros = {1, 2, 3, 1, 2, 4, 5, 5, 6, 7, 8, 9, 0}
+print(numeros)
+
+numeros.pop() 
+numeros.pop() 
+numeros.pop() 
+numeros.pop()
+
+print(numeros)
+
+#remove
+numeros = {1, 2, 3, 1, 2, 4, 5, 5, 6, 7, 8, 9, 0}
+print(numeros)
+numeros.remove(1)
+# numeros.remove(45)
+print(numeros)
+
+# comprimento len
+print(len(numeros))
+
+# in
+print( 0 in numeros)
+print(10 in numeros)
