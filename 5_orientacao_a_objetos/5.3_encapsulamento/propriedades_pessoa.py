@@ -11,3 +11,6 @@ class Pessoa:
     def idade (self):
         _ano_atual = 2025
         return _ano_atual - self._ano_nascimento
+
+pessoa = Pessoa("Raylan", 1989)
+print(f"Nome: {pessoa.nome} \t Idade: {pessoa.idade}")
