@@ -79,5 +79,75 @@ def principal():
 
 principal()
 
+print()
+
 #### 6 - retorna funcao
-17:58
+def calculadora(operacao):
+    def soma(a, b):
+        return a + b
+
+    def sub(a, b):
+        return a - b
+
+    def mul(a, b):
+        return a * b
+
+    def div(a, b):
+        return a / b
+
+    match operacao:
+        case "+":
+            return soma
+        case "-":
+            return sub
+        case "*":
+            return mul
+        case "/":
+            return div
+        
+
+op = calculadora("+")
+print(op(2, 2))
+
+op = calculadora("-")
+print(op(2, 2))
+
+op = calculadora("*")
+print(op(2, 2))
+
+op = calculadora("/")
+print(op(2, 2))
+
+
+#### Sem decorador
+def meu_decorador(funcao):
+    def envelope():
+        print("Faz algo antes de executar a função.")
+        funcao()
+        print("Faz algo depois de executar a função.")
+    
+    return envelope
+
+def ola_mundo():
+    print("Olá mundo!")
+
+ola_mundo = meu_decorador(ola_mundo)
+ola_mundo()
+
+print()
+
+#### Com decorador
+def meu_decorador(funcao):
+    def envelope():
+        print("Faz algo antes de executar a função.")
+        funcao()
+        print("Faz algo depois de executar a função.")
+    
+    return envelope
+
+
+@meu_decorador
+def ola_mundo():
+    print("Olá mundo!")
+
+ola_mundo()
