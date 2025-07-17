@@ -8,6 +8,8 @@ print(arquivo.readlines())
 
 arquivo.close()
 
-#dica:
+#Dica:
+#Esse é o caminho mais rápido se você não quiser fazer um gerador e quiser explorar um arquivo grande da sua máquina
+
 # while len(linha := arquivo.readline()):
 #    print(linha)
