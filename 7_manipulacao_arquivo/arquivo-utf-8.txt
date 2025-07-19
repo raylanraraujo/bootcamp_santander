@@ -1,0 +1,4 @@
+Aprendendo a manipular arquivos com Python.
+
+Os caracteres abaixo não são possíveis de serem lidos no 'ascii'
+ŸŸŸ
