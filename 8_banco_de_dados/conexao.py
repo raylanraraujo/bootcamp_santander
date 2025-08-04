@@ -37,9 +37,15 @@ def inserir_muitos(conexao, cursor, dados):
     conexao.commit()
 
 
-dados = [
-    ('Raylan', 'ray@gmail.com'),
-    ('Debora', 'debs@gmail.com'),
-    ('Celeste', 'celeste@gmail.com')
-]
-inserir_muitos(conexao, cursor, dados)
+def recuperar_cliente(cursor, id):
+    cursor.execute("SELECT * FROM clientes WHERE id=?", (id,))
+    return cursor.fetchone()
+    
+
+def listar_clientes(cursor):
+    return cursor.execute("SELECT * FROM clientes")
+
+
+clientes = listar_clientes(cursor)
+for cliente in clientes:
+    print(cliente)
